@@ -1,23 +1,29 @@
-# CTPS
+# CTPS · Gaming club operations
 
-**Gaming club operations, from opening a station to closing the day.**
+**See which stations are free, charge for play and purchases, and reconcile the shift.**
 
-CTPS is a local operations prototype that brings station sessions, checkout, and inventory into one workspace. Cashiers handle the floor and customer transactions, while owners manage pricing, stock, and daily reporting.
+![CTPS club floor showing a running PS 01 session, station availability, and the live bill](01-club-floor.jpg)
 
-## What the demo shows
+**Club floor.** The cashier can see which stations are available, occupied, or under maintenance. The selected station shows elapsed time, the hourly rate, and the running bill.
 
-| On the floor | At checkout | In the owner workspace |
-| --- | --- | --- |
-| See station availability and start a play session. | Add products to a bill and settle a completed session. | Configure zone pricing, review inventory and see daily totals. |
+## From play to payment
 
-A typical walkthrough starts with an available station, follows the session through checkout, and ends with the owner reviewing the day's activity. The demo runs locally and uses sample transactions.
+![Checkout for PS 01 with play time, lemon tea and the calculated total](02-checkout.jpg)
 
-## Verified outcome
+The cashier ends the session and sees one itemized bill for play time and products. In this walkthrough, PS 01 and one lemon tea came to **10,292 UZS** in the sample register.
 
-| Check | Result |
-| --- | --- |
-| Fresh demo | Built and started on an Apple silicon Mac and in Ubuntu CI. |
-| Application availability | The home page loaded and the service reported healthy on a clean Mac setup. |
-| Automated checks on Mac | 21 launcher tests and 146 Django tests against PostgreSQL passed. |
+## The same sale in the owner’s report
 
-**Status:** Private alpha, evaluated with sample data.
+![Owner report showing the recorded cash payment and the paid PS 01 bill](03-owner-report.jpg)
+
+The owner sees the **10,292 UZS** test payment in the current business day and can trace it back to the paid bill. The report also shows cost of sales and gross margin.
+
+## Stock and ingredients
+
+![Inventory view showing packaged products, ingredients and available prepared portions](04-inventory.jpg)
+
+The stock screen shows packaged products, ingredients, and how many portions can be prepared from the available stock.
+
+---
+
+All four screenshots come from the same local alpha demo with a fictional club and sample transactions. No real payment was processed.
